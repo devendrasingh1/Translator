@@ -1088,7 +1088,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .newsletter_form .news_icon {
     position: absolute;
     top: 17px;
-    left: 0;
+    left: 10px;
     color: #fff;
 }
 .newsletter_form input {
@@ -1096,10 +1096,10 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     height: 50px;
     border: none;
     background: transparent;
-    border-bottom: 1px solid #fff;
+    border: 1px solid #fff;
     font-size: 15px;
     color: #fff;
-    padding: 0 80px 0 25px;
+    padding: 0 80px 0 35px;
 }
 .newsletter_form .news_btn {
     position: absolute;

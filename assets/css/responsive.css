@@ -310,6 +310,16 @@
 	    width: 100%;
 	}
 	/*=== search bar css ===*/
+	/*=== Newsletter css ===*/
+	.newsletter_form .news_btn {
+	    position: relative;
+	    padding: 0 15px;
+	    width: 100%;
+	}
+	.newsletter_form input {
+	    padding: 0 15px 0 35px;
+	}
+	/*=== Newsletter css ===*/
 }
 @media(max-width: 375px){
 	.rating_desc h5 {
