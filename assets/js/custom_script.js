@@ -114,7 +114,24 @@
 			}
 		});
 	}
-	
+	//popup gallery
+	$('.popup_gallery').magnificPopup({
+		delegate: '.gallery_items',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-with-zoom',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+			}
+		}
+	});
 	//progressbar js
 	$(window).on('load', function() {
 	  if ($(window).width () > 991){

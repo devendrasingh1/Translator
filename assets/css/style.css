@@ -871,7 +871,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .feature_boxs .feature_icons {
     float: left;
     width: 45px;
-    font-size: 40px;
+    font-size: 35px;
     color: #1218ff;
 }
 .feature_boxs .feature_txt {
@@ -1153,8 +1153,75 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin-top: 10px;
 }
 /*======= about css End ==========*/
-    
-
+/*======= about page css start ==========*/
+.page_contents p {
+    color: #777;
+}
+.feature_icons .icon_circle {
+    width: 45px;
+    height: 45px;
+    line-height: 44px;
+    display: inline-block;
+    font-size: 20px;
+    color: #1218ff;
+    border: 2px solid;
+    border-radius: 50%;
+    text-align: center;
+}
+.about_feature_section{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+/*======= about page css End ==========*/
+/*======= gallery section css start ==========*/
+.popup_gallery {
+    display: inline-block;
+    width: 100%;
+}
+.popup_gallery .gallery_items {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    transform: scale(0.5);
+}
+/*======= gallery section css End ==========*/
 /*======= login sinup css ==========*/
 .login_header{
     display: inline-block;
@@ -1341,23 +1408,24 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 }
 /*======= selectpicker css ==========*/
 /*======= page banner css ==========*/
-.page_banner_section{
-    background: url(../images/bg/page_banner_bg.jpg) no-repeat;
+.page_banner_section {
+    background: url(../images/slider/slide_1.png) no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 120px 0;
+    padding: 60px 0;
     position: relative;
+    float: left;
+    width: 100%;
 }
-.page_banner_section .banner_overlay{
-    background: #000000;
-    opacity: 0.65;
+.page_banner_caption {
+    text-align: left;
+    padding-left: 40px;
+    border-left: 5px solid #1218ff;
 }
-.page_banner_caption{
-    text-align: center;
-}
-.page_banner_text h2 {
-    color: #fff;
-    margin-bottom: 15px;
+.page_banner_caption h2 {
+    color: #1218ff;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 .breadcrumbs ul {
     padding: 0;
@@ -1368,7 +1436,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .breadcrumbs > ul > li {
     display: inline-block;
     vertical-align: middle;
-    color: #ffffff;
+    color: #000;
     text-transform: capitalize;
     font-size: 16px;
     padding: 0 10px;
@@ -1376,17 +1444,17 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 }
 .breadcrumbs > ul > li > a {
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     float: left;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: inherit;
     font-weight: 400;
 }
 .breadcrumbs > ul > li > a:hover {
     color: #30aabc;
 }
 .breadcrumbs > ul > li:after {
-    color: #ffffff;
+    color: #000000;
     content: "/\00a0";
     position: absolute;
     left: 100%;
