@@ -153,6 +153,17 @@
 	/*== submenu second level css ==*/
 }
 @media(max-width: 991px) {
+	/*==== sidebar css ====*/
+	.sidebar_toggle{
+		display: inline-block;
+	}
+	.transl_sidebar{
+		display: none;
+	}
+	/*==== sidebar css ====*/
+	.translate_search_wrap {
+	    margin-top: 20px;
+	}
 	.footer_section {
 	    text-align: center;
 	}
@@ -320,6 +331,13 @@
 	    padding: 0 15px 0 35px;
 	}
 	/*=== Newsletter css ===*/
+	.trans_col {
+	    -ms-flex: 0 0 100%;
+	    flex: 0 0 100%;
+	    max-width: 100%;
+	    width: 100%;
+	    text-align: center;
+	}
 }
 @media(max-width: 375px){
 	.rating_desc h5 {

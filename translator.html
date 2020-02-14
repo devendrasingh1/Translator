@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Translator</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Translator">
+	<meta name="Keyword" content="Translator">
+	<meta name="author" content="">
+    <link rel="shortcut icon" type="image/icon" href="assets/images/favicon.png">
+	<link href="assets/css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+   <!-- Top Header Start -->
+	<div class="top_header">
+		<div class="container">
+			<div class="header_left">
+				<div class="header_contact">
+					<div class="contact_list">
+						<span class="c_icon"><i class="fas fa-envelope"></i></span>
+						<div>
+							<p>info@trans.com</p>
+						</div>
+					</div>
+					<div class="contact_list">
+						<span class="c_icon"><i class="fas fa-phone-alt"></i></span>
+						<div>
+							<p>455-5553-996</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header_right">
+			 	<div class="social_icons">
+				  <a href="#"><i class="fab fa-facebook-f"></i></a>
+				  <a href="#"><i class="fab fa-twitter"></i></a>
+				  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+				  <a href="#"><i class="fab fa-instagram"></i></a>
+		 		</div>
+			</div>
+		</div>
+	</div>
+	<!-- Top Header End -->
+	<!-- Navigation Header start -->
+	<div class="navigation_header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-9 col-12">
+					<!-- logo Desktop -->
+					<div class="header_logo logo_desktop">
+						<a href="#">
+							<img src="assets/images/site_logo.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<!-- logo Desktop -->
+					<div class="navigation">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="translator.html">Translator</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<!-- logo Mobile -->
+					<div class="header_logo logo_mobile">
+						<a href="#">
+							<img src="assets/images/site_logo.png" alt="" class="img-fluid">
+						</a>
+					</div>
+					<!-- logo Mobile -->
+					<div class="header_login_rgt">
+						<div class="header_login">
+							<a href="#"><i class="far fa-user"></i></a>
+						</div>
+						<div class="nav_toggle">
+							<i></i>
+							<i></i>
+							<i></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Navigation header end -->
+	<!-- page banner start -->
+	<div class="page_banner_section">
+		<div class="container">
+			<div class="page_banner_caption">
+				<h2>Search Translator</h2>
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Translator</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- page banner End -->
+	<!-- page banner start -->
+	<div class="section translator_search_page pad_top_40">
+		<div class="container">
+			<div class="row">
+				<!-- sidebar start -->
+				<div class="col-lg-4 col-12">
+					<div class="transl_sidebar_wrap">
+						<div>
+						   <span class="sidebar_toggle"><i class="fas fa-sliders-h"></i> Filter</span>
+						</div>
+						<div class="transl_sidebar">
+							<!-- search bar start -->
+							<div class="tran_widgets">
+								<div class="search_bar_input">
+									<form>
+									  <input type="text" name="" placeholder="Search">
+									  <button type="submit" class="search_btn">
+									  	<i class="fas fa-search"></i>
+									  </button>
+									</form>
+								</div>
+							</div>
+							<!-- search widget End -->
+							<!-- Language widget start -->
+							<div class="tran_widgets">
+								<h5 class="titles">Select Language</h5>
+								<div class="lang_checkbox">
+									<label>
+										<input type="checkbox" name="language" value="Chinese">
+										<span class="checkbox_div">Chinese<i class="fas fa-times"></i></span>
+									</label>
+									<label>
+										<input type="checkbox" name="language" value="Hindi">
+										<span class="checkbox_div">Hindi <i class="fas fa-times"></i></span>
+									</label>
+									<label>
+										<input type="checkbox" name="language" value="English">
+										<span class="checkbox_div">English<i class="fas fa-times"></i></span>
+									</label>
+									<label>
+										<input type="checkbox" name="language" value="Spanish">
+										<span class="checkbox_div">Spanish<i class="fas fa-times"></i></span>
+									</label>
+									<label>
+										<input type="checkbox" name="language" value="Arabic">
+										<span class="checkbox_div">Arabic<i class="fas fa-times"></i></span>
+									</label>
+								</div>
+							</div>
+							<!-- Language widget End -->
+							<!-- Price widget start -->
+							<div class="tran_widgets">
+								<h5 class="titles">Price Range</h5>
+								<div class="range_wrap">
+								   <div class="price_range"></div>
+								   <div class="price_txt">Price: 
+								   <input type="text" id="p_amount" readonly>
+								   <button type="button" class="p_filter_btn">Filter</button>
+								   </div>
+								</div>
+							</div>
+							<!-- Price widget End -->
+							<!-- Rating widget start -->
+							<div class="tran_widgets">
+								<h5 class="titles">Rating</h5>
+								<div class="radio_box">
+									<label>
+										<input type="radio" name="Rating" value="1 star">
+										<span class="r_check"></span>
+										<span class="r_text">1 star <span class="r_count">15</span></span>
+									</label>
+									<label>
+										<input type="radio" name="Rating" value="2 star">
+										<span class="r_check"></span>
+										<span class="r_text">2 star <span class="r_count">10</span></span>
+									</label>
+									<label>
+										<input type="radio" name="Rating" value="3 star">
+										<span class="r_check"></span>
+										<span class="r_text">3 star <span class="r_count">20</span></span>
+									</label>
+									<label>
+										<input type="radio" name="Rating" value="4 star">
+										<span class="r_check"></span>
+										<span class="r_text">4 star <span class="r_count">25</span></span>
+									</label>
+									<label>
+										<input type="radio" name="Rating" value="5 star">
+										<span class="r_check"></span>
+										<span class="r_text">5 star <span class="r_count">25</span></span>
+									</label>
+								</div>
+							</div>
+							<!-- Rating widget End -->
+						</div>
+					</div>
+				</div>
+				<!-- sidebar End -->
+				<div class="col-lg-8 col-12">
+					<div class="translate_search_wrap">
+						<h4 class="trans_s_heading">Translator</h4>
+						<!-- filter bar start -->
+						<div class="trans_filter_bar">
+							<div class="rslt_count">
+								13 Result found
+							</div>
+							<div class="rslt_sort">
+								<label>Sort</label>
+								<select>
+									<option value="">Rating</option>
+									<option value="1 star">1 star</option>
+									<option value="2 star">2 star</option>
+									<option value="3 star">3 star</option>
+									<option value="4 star">4 star</option>
+									<option value="5 star">5 star</option>
+								</select>
+							</div>
+						</div>
+						<!-- filter bar End -->
+						<!-- Translator row start -->
+						<div class="row">
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_1.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_2.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_3.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_1.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_2.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-4 col-md-6 col-6 trans_col">
+								<div class="trans_fegure">
+									<div class="trans_img">
+										<img src="assets/images/translator/img_3.jpg">
+									</div>
+									<div class="fig_captions">
+										<h5><a href="translator_detail.html">Christine M. Creekmore</a></h5>
+										<div class="rating_dv">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star disable_str"></i>
+										</div>
+										<div class="team_rate">$100</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Translator row End -->
+						<!-- pagination start -->
+						<div class="tr_pagination">
+							<ul class="pagination">
+								<li><span class="prev"><i class="fas fa-caret-left"></i>
+								</span></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><span class="Next"><i class="fas fa-caret-right"></i></span></li>
+							</ul>
+						</div>
+						<!-- pagination End -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- page banner End -->
+    <!-- footer Section End -->
+	<div class="section footer_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-sm-12">
+					<div class="footer_widget">
+						<div class="footer_logo">
+							<a href="index.html">
+								<img src="assets/images/site_logo.png" class="img-fluid" alt="">
+							</a>
+						</div>
+						<div class="copyright_txt">
+							<p>Copyright all Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-sm-12">
+					<div class="footer_widget">
+						<h5 class="footer_title">Quick Links</h5>
+						<div class="footer_menus">
+							<ul>
+								<li><a href="#">about us</a></li>
+								<li><a href="#">contact us</a></li>
+								<li><a href="#">support</a></li>
+								<li><a href="#">our feed</a></li>
+								<li><a href="#">terms and conditions</a></li>
+								<li><a href="#">our privacy</a></li>
+								<li><a href="#">join us</a></li>
+								<li><a href="#">live support</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-12">
+					<div class="footer_widget">
+						<h5 class="footer_title">Payment Methods</h5>
+						<div class="payment_img">
+							<img src="assets/images/payment_images.png" alt="" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer Section End -->
+	<!-- jquery library js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="assets/js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="assets/js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="assets/js/plugins/jquery_ui/jquery-ui.min.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="assets/js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+	<script src="assets/js/custom_script.js"></script>
+	</body>
+</html>

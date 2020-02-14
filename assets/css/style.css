@@ -35,10 +35,19 @@ body{
     -o-transform: skewY(2.2deg);
 }
 /*=== common css Start ===*/
+img{
+    max-width: 100%;
+}
 .owl-carousel .owl-item img {
     display: inline-block;
     width: auto;
     max-width: 100%;
+}
+.pad_top_30{
+    padding-top: 30px;
+}
+.pad_top_40{
+    padding-top: 40px;
 }
 .pad_top_50{
     padding-top: 50px;
@@ -266,11 +275,11 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .radio_box label .r_check {
     position: absolute;
     left: 0;
-    top: 0px;
-    width: 18px;
-    height: 18px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
     content: "";
-    border: 1px solid #999999;
+    background: #e2e2e2;
     border-radius: 50%;
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
@@ -283,22 +292,26 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     left: 3px;
     width: 10px;
     height: 10px;
-    background-color: #999999;
+    background-color: #1218ff;
     border-radius: 50%;
     transition: all ease-in 0.25s;
     -webkit-transition: all ease-in 0.25s;
     -moz-transition: all ease-in 0.25s;
+    visibility: hidden;
+    opacity: 0;
 }
 .radio_box .r_text {
     padding-left: 28px;
-    color: #555555;
+    color: #34404b;
     display: block;
 }
-.radio_box label input[type=radio]:checked ~ .r_check{
-    border-color: #30aabc;
-}
+
 .radio_box label input[type=radio]:checked ~ .r_check:after{
-    background-color: #30aabc;
+    visibility: visible;
+    opacity: 1;
+}
+.radio_box label .r_count {
+    float: right;
 }
 /*=== radio box css End ===*/
 /*== check box css ==*/
@@ -1222,6 +1235,305 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     transform: scale(0.5);
 }
 /*======= gallery section css End ==========*/
+/*======= translator sidebar css start ==========*/
+.transl_sidebar_wrap {
+    display: inline-block;
+    width: 100%;
+}
+.sidebar_toggle {
+    cursor: pointer;
+    padding: 0 18px;
+    height: 35px;
+    line-height: 35px;
+    border: none;
+    background: #1218ff;
+    color: #fff;
+    display: none;
+}
+.transl_sidebar {
+    float: left;
+    width: 100%;
+    background: #f7f7f7;
+    padding: 20px;
+}
+.tran_widgets{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.tran_widgets .titles {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.search_bar_input {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.search_bar_input input {
+    width: 100%;
+    height: 40px;
+    padding: 0 27px 0 10px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+}
+.search_bar_input .search_btn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    height: 40px;
+    border: none;
+    background: none;
+    color: #1218ff;
+}
+.lang_checkbox {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    max-height: 160px;
+    overflow-y: auto;
+}
+.lang_checkbox label {
+    float: left;
+    /* margin-bottom: 4px; */
+    margin: 2px;
+}
+.lang_checkbox label input {
+    display: none;
+}
+.lang_checkbox label .checkbox_div {
+    color: #000;
+    background: #f0f0f0;
+    padding: 10px 22px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    position: relative;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+}
+.lang_checkbox label .checkbox_div i {
+    display: none;
+    position: absolute;
+    right: 8px;
+    top: 13px;
+}
+.lang_checkbox label input:checked ~ .checkbox_div {
+    background: #1218ff;
+    color: #fff;
+}
+.lang_checkbox label input:checked ~ .checkbox_div i {
+   display: inline-block;
+}
+/*== range slider ==*/
+.range_wrap {
+    display: inline-block;
+    width: 100%;
+    margin-top: 8px;
+}
+.range_wrap .price_txt {
+    color: #686868;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.range_wrap input {
+    border: none;
+    padding: 0;
+    height: auto;
+    margin-bottom: 0;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+}
+.range_wrap .price_txt .p_filter_btn {
+    display: inline-block;
+    padding: 0 12px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    background: #1218ff;
+    color: #fff;
+}
+.price_range.ui-widget.ui-widget-content {
+    border: none;
+    background: #eaeaea;
+    height: 5px;
+}
+.range_wrap .ui-widget-header {
+    background: #1218ff;
+}
+.range_wrap .ui-slider .ui-slider-handle {
+    width: 4px;
+    height: 16px;
+    border-radius: 0;
+    top: -5px !important;
+    background: #1218ff;
+    border: none;
+}
+.price_range.ui-slider-horizontal .ui-slider-handle {
+    margin-left: 0;
+}
+.range_wrap .ui-slider .ui-slider-handle:focus{
+    outline: none;
+}
+/*== range slider ==*/
+/*======= translator sidebar css End ==========*/
+/*======= translator search css start ==========*/
+.translate_search_wrap {
+    display: inline-block;
+    width: 100%;
+}
+.translate_search_wrap .trans_s_heading {
+    color: #34404b;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.trans_filter_bar {
+    display: flex;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.trans_filter_bar .rslt_count {
+    float: left;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    color: #4a5763;
+    font-size: 14px;
+}
+.trans_filter_bar .rslt_sort {
+    float: left;
+    padding: 10px;
+    color: #4a5763;
+    font-size: 14px;
+}
+.trans_filter_bar .rslt_sort label {
+    margin-bottom: 0;
+}
+.trans_filter_bar .rslt_sort select {
+    border: none;
+}
+.trans_fegure {
+    display: inline-block;
+    background: #f7f7f7;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.trans_fegure .fig_captions {
+    padding: 18px 10px 18px;
+}
+.fig_captions h5 {
+    font-size: 17px;
+    color: #34404b;
+    font-weight: 600;
+    margin-bottom: 17px;
+    margin-top: 0;
+}
+.fig_captions h5 a {
+    text-decoration: none;
+    color: #34404b;
+}
+.fig_captions h5 a:hover {
+    color: #1218ff;
+}
+.rating_dv{
+    display: inline-block;
+    width: 100%;
+}
+.rating_dv i{
+    font-size: 13px;
+    color: #fdae0b;
+}
+.rating_dv i.disable_str{
+    font-size: 13px;
+    color: #cfcfcf;
+}
+.fig_captions .team_rate {
+    color: #1218ff;
+    font-size: 17px;
+    font-weight: 700;
+}
+.fig_captions .rating_dv {
+    margin-bottom: 10px;
+}
+/*======= translator search css End ==========*/
+/*======= translator Detail css End ==========*/
+.back_search_head {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 0;
+}
+.back_search_head a {
+    font-size: 15px;
+    color: #777;
+    text-transform: capitalize;
+}
+.trans_detail_figure{
+    display: inline-block;
+    width: 100%;
+}
+.trans_detail_figure .trans_thumb_lft {
+    float: left;
+    width: 300px;
+}
+.trans_detail_figure .trans_caption_rgt {
+    display: block;
+    padding-left: 320px;
+}
+.rating_wraps .rating_dv {
+    width: auto;
+}
+/*======= translator Detail css End ==========*/
+/*======= Pagination css End ==========*/
+.tr_pagination {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.tr_pagination .pagination {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+}
+.tr_pagination .pagination li {
+    float: left;
+}
+.tr_pagination .pagination li a, 
+.tr_pagination .pagination li span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    color: #000;
+    text-decoration: none;
+    margin: 0 5px;
+}
+.tr_pagination .pagination li.active a, 
+.tr_pagination .pagination li.active span {
+    border-color:#2644fb;
+    color: #ffffff;
+    background-color: #2644fb;
+}
+.tr_pagination .pagination li a:hover, 
+.tr_pagination .pagination li span:hover {
+    border-color:#2644fb;
+    color: #ffffff;
+    background-color: #2644fb;
+}
+/*======= Pagination css End ==========*/
+
 /*======= login sinup css ==========*/
 .login_header{
     display: inline-block;

@@ -45,6 +45,10 @@
 	else {
 		
 	}
+	//Sidebar toggle js
+	$('.sidebar_toggle').on('click', function(){
+		$(".transl_sidebar").slideToggle(300);
+	});
 	//Datepicker
 	if($(".calendar_dv").length > 0){
 		$( ".calendar_dv" ).datepicker({
@@ -88,7 +92,7 @@
 			autoplay:false,
 			autoplayTimeout:3000,
 			autoplaySpeed:1500,
-			smartSpeed:1500,
+			smartSpeed:1000,
 			dots:true,
 			nav:false,
 			responsive:{
@@ -132,14 +136,30 @@
 			}
 		}
 	});
-	//progressbar js
+	//Price range slider
+	$( ".price_range" ).slider({
+		range: true,
+		min: 0,
+		max: 1000,
+		values: [ 150, 650 ],
+		slide: function( event, ui ) {
+		$( "#p_amount" ).val( "" + ui.values[ 0 ] + " -" + ui.values[ 1 ] );
+		}
+	});
+	$( "#p_amount" ).val( "" + $( ".price_range" ).slider( "values", 0 ) +
+	" -" + $( ".price_range" ).slider( "values", 1 ) );
+	
+	//window load js
 	$(window).on('load', function() {
 	  if ($(window).width () > 991){
 		var win_h = $(this).outerHeight();
 		var top_h = $(".top_header").outerHeight();
 		var nav_h = $(".navigation_header").outerHeight();
 		var slide_h = win_h -(top_h + nav_h);
+		//slider full height
 		$(".slide_item_bg").css('height',slide_h);
+		//Sidebar full height
+		$(".transl_sidebar").css('height',win_h);
 	   }
 	});
 	//Jqeury counter
