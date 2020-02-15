@@ -1562,6 +1562,9 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     float: left;
     width: 300px;
 }
+.trans_thumb_lft .trans_thumb{
+    display: inline-block;
+}
 .trans_detail_figure .trans_caption_rgt {
     display: block;
     padding-left: 320px;
@@ -1611,23 +1614,29 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin: 7px 0;
 }
 .prof_detail_lst {
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  
+}
+.prof_detail_lst tr td {
+    color: #666;
+    border: none;
+    padding: 9px 5px;
 }
 .prof_detail_lst .frst_spn {
-    float: left;
     width: 150px;
 }
 .prof_detail_lst .scnd_spn {
     color: #34404b;
-    display: block;
-    padding-left: 160px;
 }
 .prof_detail_lst .social_icons a {
     color: #999;
+}
+.prof_detail_lst .social_icons a:hover {
+    color: #1218ff;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
 }
 /*======= translator Detail css End ==========*/
 /*======= translator tab css start ==========*/

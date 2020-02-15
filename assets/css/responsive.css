@@ -1,4 +1,12 @@
 
+@media(max-width: 1199px){
+	.trans_detail_figure .trans_thumb_lft {
+	    width: 250px;
+	}
+	.trans_detail_figure .trans_caption_rgt {
+	    padding-left: 270px;
+	}
+}
 @media(min-width: 992px){
 	.nav_toggle{
 		display: none;
@@ -254,6 +262,79 @@
 	.slider_caption .heading {
 	    font-size: 30px;
 	}
+	/*tranlator detail css*/
+	.trans_detail_figure .trans_thumb_lft {
+	    float: left;
+	    width: 100%;
+	    text-align: center;
+	}
+	.trans_thumb_lft .trans_thumb {
+	    display: inline-block;
+	    width: 120px;
+	}
+	.trans_thumb_lft .trans_thumb img {
+	    width: 120px;
+	    height: 120px;
+	    border-radius: 50%;
+	    object-fit: cover;
+	}
+	.trans_detail_figure .trans_caption_rgt {
+	    padding-left: 0;
+	    padding-top: 30px;
+	    display: inline-block;
+	    width: 100%;
+	}
+	.heading_dv {
+	    text-align: center;
+	}
+	.heading_dv .lft {
+	    display: inline-block;
+	    width: 100%;
+	}
+	.heading_dv .right_dv {
+	    float: left;
+	    width: 100%;
+	    margin-top: 22px;
+	}
+	.trans_caption_rgt .amount_trns{
+		text-align: center;
+	}
+	/*tranlator detail css*/
+	/*Booking form css*/
+	.booking_cal_bg .booking_form {
+	    float: left;
+	    width: 100%;
+	}
+	.booking_calendar_dv {
+	    padding-right: 0;
+	    display: inline-block;
+	    width: 100%;
+	}
+	.booking_forms {
+	    padding: 20px;
+	}
+	.booking_form_head h5 {
+	    padding-bottom: 11px;
+	    margin-bottom: 18px;
+	}
+	.booking_forms .button_group {
+	    margin-top: 25px;
+	}
+	/*=== Booking form css ===*/
+	/*== Review  css ==*/
+	.review_user_list .r_thumb{
+	    width: 75px;
+	}
+	.review_user_list .r_thumb img {
+	    width: 75px;
+	    height: 75px;
+	    object-fit: cover;
+	    border-radius: 50%;
+	}
+	.review_user_list .r_caption {
+	    padding-left: 100px;
+	}
+	/*== Review  css ==*/
 }
 @media(max-width: 600px){
 	.top_header{
@@ -337,6 +418,10 @@
 	    max-width: 100%;
 	    width: 100%;
 	    text-align: center;
+	}
+	.profile_dtl_tabs .tab_menu li {
+	    padding: 11px 6px;
+	    font-size: 13px;
 	}
 }
 @media(max-width: 375px){
