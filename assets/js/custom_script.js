@@ -56,6 +56,29 @@
 		  firstDay: 1,
 		});
 	}
+	//Datepicker
+	if($(".datepicker").length > 0){
+		$( ".datepicker" ).datepicker({
+		  dateFormat: "dd-mm-yy",
+		  minDate:0
+		});
+	}
+	//Datepicker
+	if($(".calendar_input").length > 0){
+		$( ".calendar_input" ).datepicker({
+		  dateFormat: "dd-mm-yy",
+		});
+	}
+	//Timepicker
+	if($(".time_picker").length > 0){
+		$('.time_picker').timepicker({
+		  timeFormat: 'h:mm: TT',
+		  ampm: true,
+		  stepHour: 1,
+		  stepMinute: 5,
+		});
+	}
+
 	//bootsrape selectpicker
     if ($(".selectpicker").length > 0) {
       $('.selectpicker').selectpicker();

@@ -61,6 +61,10 @@ img{
 .pad_top_80{
     padding-top: 80px;
 }
+.pad_top_bottom_40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .pad_top_bottom_50{
     padding-top: 50px;
     padding-bottom: 50px;
@@ -175,7 +179,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     border: 1px solid transparent;
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: capitalize;
     height: 44px;
     line-height: 42px;
@@ -207,7 +211,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin-right: 5px;
 }
 .circle_button:hover {
-    background: #30aabc;
+    background: #1218ff;
     color: #ffffff;
     text-decoration: none;
 }
@@ -217,6 +221,62 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     -moz-box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.26);
 }
 /*=== common css End ===*/
+/*=== Datepicker css start ===*/
+.ui-datepicker .ui-widget-header {
+    background: #2644fb;
+    border-color: #2644fb;
+    font-weight: normal;
+    font-size: 15px;
+}
+.ui-datepicker td .ui-state-default {
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 4px;
+}
+.ui-datepicker td .ui-state-default.ui-state-active {
+    background: #2644fb;
+    color: #fff;
+    border-color: #2644fb;
+}
+.ui-datepicker td .ui-state-default.ui-state-hover {
+    background: #34404b;
+    color: #fff;
+    border-color: #34404b;
+}
+.ui-datepicker td .ui-state-default.ui-state-highlight {
+    background: #ec2020;
+    color: #fff;
+    border-color: #ec2020;
+}
+.ui-datepicker th {
+    font-family: 'Lato', sans-serif;
+}
+/*=== Datepicker css End ===*/
+/*=== Timepicker css start ===*/
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button {
+    font-family: 'Lato', sans-serif;
+}
+.ui-timepicker-div dl dt {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+.ui-timepicker-div .ui_tpicker_time .ui_tpicker_time_input {
+    font-size: 15px;
+}
+.ui-datepicker-buttonpane button.ui-state-default {
+    font-weight: normal;
+    font-size: 15px;
+    background: #2644fb;
+    color: #fff;
+    padding: 0 13px;
+    height: 30px;
+    line-height: 29px;
+}
+/*=== Timepicker css End ===*/
 /*=== tab css start ===*/
 .tab_menu {
     float: left;
@@ -241,7 +301,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin-right: 5px;
 }
 .tab_menu li.active{
-    background-color: #30aabc;
+    background-color: #1218ff;
     color: #fff;
 }
 .tab_content{
@@ -255,6 +315,21 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     -webkit-animation:fadeIn 1s 1;
     animation:fadeIn 1s 1;
     -moz-animation:fadeIn 1s 1;
+}
+.tab_content_inner {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 20px;
+}
+.tab_content_inner p {
+    margin-bottom: 0;
+}
+
+.tab_content_inner h5 {
+    color: #34404b;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 11px;
 }
 /*=== tab css End ===*/
 /*=== radio box css Start ===*/ 
@@ -342,8 +417,8 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     top: 3px;
     width: 10px;
     height: 5px;
-    border-left: 2px solid #30aabc;
-    border-bottom: 2px solid #30aabc;
+    border-left: 2px solid #1218ff;
+    border-bottom: 2px solid #1218ff;
     visibility:hidden;
     opacity:0;
     transition:all ease-in 0.25s;
@@ -358,7 +433,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     text-transform: capitalize;
 }
 .check_box input[type="checkbox"]:checked ~ .c_box{
-    border-color: #30aabc;
+    border-color: #1218ff;
 }
 .check_box input[type="checkbox"]:checked ~ .c_box:after{
     visibility:visible;
@@ -571,7 +646,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     margin-right: 10px;
 }
 .navigation ul li ul li a:hover {
- background-color: #30aabc;
+ background-color: #1218ff;
  color: #ffffff;
 }
 .navigation ul li ul li a:hover .nav_icon{
@@ -1465,6 +1540,10 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 }
 /*======= translator search css End ==========*/
 /*======= translator Detail css End ==========*/
+.translator_detail_page {
+    background-color: #f4f6f8;
+    padding-bottom: 30px;
+}
 .back_search_head {
     display: inline-block;
     width: 100%;
@@ -1487,10 +1566,284 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     display: block;
     padding-left: 320px;
 }
+.heading_dv {
+    display: inline-block;
+    width: 100%;
+}
+.heading_dv .lft {
+    display: inline-block;
+}
+.trans_caption_rgt .heading_dv h5 {
+    color: #34404b;
+    font-weight: 600;
+}
+.heading_dv .right_dv {
+    float: right;
+}
+.trans_caption_rgt .hire_btn {
+    height: 40px;
+    line-height: 38px;
+    font-size: 14px;
+}
 .rating_wraps .rating_dv {
     width: auto;
 }
+.rating_wraps .review_txt {
+    color: #666666;
+    font-size: 14px;
+}
+.trans_caption_rgt .amount_trns span {
+    padding-left: 8px;
+    color: #777777;
+    font-weight: normal;
+}
+.trans_caption_rgt .amount_trns {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #1218ff;
+    padding: 16px 0 15px;
+}
+.prof_detail_lst > li {
+    float: left;
+    width: 100%;
+    margin: 7px 0;
+}
+.prof_detail_lst {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.prof_detail_lst .frst_spn {
+    float: left;
+    width: 150px;
+}
+.prof_detail_lst .scnd_spn {
+    color: #34404b;
+    display: block;
+    padding-left: 160px;
+}
+.prof_detail_lst .social_icons a {
+    color: #999;
+}
 /*======= translator Detail css End ==========*/
+/*======= translator tab css start ==========*/
+.profile_dtl_tabs {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+.profile_dtl_tabs .tab_menu li {
+    background-color: transparent;
+    color: #000;
+    padding: 13px 10px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+.profile_dtl_tabs .tab_menu li.active {
+    background-color: transparent;
+    color: #1218ff;
+    border-color: #1218ff;
+}
+/*======= translator tab css End ==========*/
+/*======= Booking Calendar css start ==========*/
+.booking_cal_bg {
+    float: left;
+    width: 100%;
+    background-color: #f8f8f8;
+}
+.booking_cal_section .booking_head_dv {
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0 20px;
+}
+.booking_head_dv h5 {
+    font-size: 18px;
+    color: #34404b;
+    font-weight: 600;
+    margin: 0;
+}
+/*== booking Form ==*/
+.booking_cal_bg .booking_form{
+    float: right;
+    width: 250px;
+}
+.booking_forms {
+    background-color: #2644fb;
+    padding: 30px;
+}
+.booking_form_head {
+    text-align: center;
+}
+.booking_form_head h5 {
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    border-bottom: 2px solid;
+    padding-bottom: 13px;
+    margin-bottom: 25px;
+}
+.booking_forms .form_group {
+    margin-bottom: 20px;
+}
+.booking_forms .form_group input, 
+.booking_forms .form_group select {
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    padding: 6px 0px;
+    width: 100%;
+}
+.booking_forms .form_group select option {
+    background: #000000;
+    color: #ffffff;
+}
+.booking_forms .button_group {
+    margin-top: 50px;
+}
+.booking_forms .book_btn {
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    color: #34404b;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background: #fff;
+}
+.booking_forms .book_btn:hover, 
+.booking_forms .book_btn:focus {
+    color: #ffffff;
+    border-color: #ffffff;
+    background: transparent;
+}
+/*== booking Form ==*/
+/*== booking calendar ==*/
+.booking_calendar_dv{
+    display: block;
+    padding-right: 250px;
+}
+.booking_calendar{
+    display:inline-block;
+    width: 100%;
+    padding:20px;
+}
+.booking_calendar .ui-datepicker table{
+    text-align: center;
+}
+.booking_calendar .ui-datepicker .ui-widget-header {
+    background: transparent;
+    border-color: transparent;
+    font-weight: normal;
+    font-size: 20px;
+    color: #34404C;
+    margin-bottom: 15px;
+}
+.booking_calendar .ui-datepicker .ui-widget-header .ui-datepicker-prev, 
+.booking_calendar .ui-datepicker .ui-widget-header .ui-datepicker-next {
+    background: #2644fb;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+    left: 0;
+}
+.ui-datepicker .ui-datepicker-prev-hover, 
+.ui-datepicker .ui-datepicker-next-hover {
+    top: 0;
+}
+.booking_calendar .calendar_input {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.booking_calendar .ui-datepicker-inline {
+    width: 100%;
+}
+.calendar_input .ui-widget.ui-widget-content {
+    background: transparent;
+    border: none;
+}
+.booking_calendar .ui-datepicker td .ui-state-default {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.booking_calendar .ui-datepicker td .ui-state-default.ui-state-active {
+    background: #00c683;
+    color: #fff;
+}
+.booking_calendar .ui-datepicker td .ui-state-default.ui-state-highlight {
+    background: #ec2020;
+    color: #fff;
+}
+.booking_calendar .ui-datepicker td .ui-state-default.ui-state-hover{
+    background-color: #34404b;
+}
+/*== booking calendar ==*/
+/*======= Booking Calendar css End ==========*/
+/*======= Review section css start ==========*/
+.review_title {
+    font-size: 20px;
+    color: #34404b;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.review_list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+.review_list > li{
+    float: left;
+    width: 100%;
+}
+.review_user_list {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.review_user_list .r_thumb {
+    float: left;
+    width: 85px;
+}
+.review_user_list .r_thumb img {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.review_user_list .r_caption {
+    padding-left: 110px;
+}
+.r_caption .headng {
+    margin-bottom: 8px;
+}
+.r_caption .headng h5 {
+    font-size: 16px;
+    color: #34404b;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.r_caption .rating_dv {
+    margin-bottom: 15px;
+}
+.r_caption p {
+    color: #777;
+    margin-bottom: 0;
+}
+/*======= Review section css End ==========*/
+
 /*======= Pagination css End ==========*/
 .tr_pagination {
     display: inline-block;
@@ -1547,7 +1900,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     font-weight: 300;
 }
 .login_header p i{
-    color: #30aabc;
+    color: #1218ff;
     margin-right: 5px;
 }
 .login_header h4 {
@@ -1562,7 +1915,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     opacity: 1;
     font-size: 30px;
     font-weight: normal;
-    color: #30aabc;
+    color: #1218ff;
 }
 .login_sign_modal .modal-header {
     border-bottom: 0;
@@ -1583,10 +1936,10 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     text-align: center;
     margin-top: 0;
     margin-bottom: 21px;
-    color: #30aabc;
+    color: #1218ff;
 }
 .login_form .form_group > label >i {
-    color: #30aabc;
+    color: #1218ff;
     margin-right: 4px;
     font-size: 19px;
     /* vertical-align: middle; */
@@ -1622,7 +1975,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 }
 .remember_group a {
     float: right;
-    color: #30aabc;
+    color: #1218ff;
     text-decoration: none;
 }
 .login_form .site_button {
@@ -1639,7 +1992,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     padding-right: 5px;
 }
 .user_group a {
-    color: #30aabc;
+    color: #1218ff;
     text-decoration: none;
 }
 .login_form .upload_user_img {
@@ -1677,7 +2030,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     text-align: center;
     border-radius: 50%;
     color: #fff;
-    background: #30aabc;
+    background: #1218ff;
     text-transform: capitalize;
     z-index: 1;
 }
@@ -1716,7 +2069,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .select_box .dropdown-item:hover, .select_box .dropdown-item:focus {
     color: #fff;
     text-decoration: none;
-    background-color: #30aabc;
+    background-color: #1218ff;
 }
 /*======= selectpicker css ==========*/
 /*======= page banner css ==========*/
@@ -1763,7 +2116,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     font-weight: 400;
 }
 .breadcrumbs > ul > li > a:hover {
-    color: #30aabc;
+    color: #1218ff;
 }
 .breadcrumbs > ul > li:after {
     color: #000000;
