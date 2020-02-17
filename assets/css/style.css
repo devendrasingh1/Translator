@@ -1943,7 +1943,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 }
 .map_dv iframe{
     width: 100%;
-    height: 400px;
+    height: 360px;
     border:none;
 }
 .address_list {
@@ -1955,6 +1955,8 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     padding: 0;
     margin: 0;
     list-style: none;
+    width: 100%;
+    display: inline-block;
 }
 .address_list > ul > li {
     float: left;
@@ -1986,13 +1988,54 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .address_list ul li p a:hover{
     color: #1218ff;
 }
+
+.c_social_icons {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.c_social_icons > a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #1218ff;
+    border-radius: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 4px;
+}
+
+.c_social_icons > .fb{
+    background-color: #3a559f;
+}
+.c_social_icons > .twiter{
+    background-color: #50abf1;
+}
+.c_social_icons > .linkedin{
+    background-color: #0077b7;
+}
+.c_social_icons > .youtube{
+    background-color: #fe0a0a;
+}
+.c_social_icons > .insta{
+    background-color: #50abf1;
+}
 /*======= contact page css End ==========*/
 
 
 /*======= login sinup css ==========*/
+.login_page_wraper, .signup_page_wraper {
+    background: #f4f6f8;
+}
 .login_s_modal {
     margin: 0 auto;
-    width: 500px;
+    max-width: 500px;
 }
 .login_s_heading h4 {
     margin-bottom: 25px;
