@@ -2239,6 +2239,42 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     display: none;
 }
 /*======= page banner css ==========*/
+/*======= Faq Page css start ==========*/
+.fq_section_wrap{
+    display: inline-block;
+    width: 100%;
+}
+.faq_pageheading h5 {
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+.faq_pageheading h5:after {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background: #1218ff;
+    left: 0;
+    top: 100%;
+}
+.fq_section {
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.fq_section .faq_heading h6 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.fq_section .faq_content p {
+    margin-bottom: 0;
+    color: #777;
+}
+/*======= Faq Page css End ==========*/
 /*======= animation css ==========*/
 .fadetop{
     -webkit-animation:fadetop 1s 1;
@@ -2370,3 +2406,17 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     color: #1218ff;
 }
 /*======= Footer css start ==========*/
+/*======= Privacy page content css start ==========*/
+.privacy_page_contents h5{
+    font-size: 18px;
+}
+.privacy_page_contents h5, .privacy_page_contents h4 {
+    font-weight: 600;
+}
+.privacy_page_contents ul, .privacy_page_contents ol {
+    padding-left: 15px;
+}
+.privacy_page_contents ul li, .privacy_page_contents ol li {
+    line-height: 26px;
+}
+/*======= Privacy page content css End ==========*/
