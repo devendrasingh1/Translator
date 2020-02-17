@@ -2239,6 +2239,46 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     display: none;
 }
 /*======= page banner css ==========*/
+/*======= Faq search bar css start ==========*/
+.faq_search_bar {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.faq_search_bar h4 {
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #1218ff;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.faq_search_form {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.24);
+    -webkit-box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 3px 2px 12px -2px rgba(0, 0, 0, 0.24);
+}
+.faq_search_form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 86px 0 19px;
+    background: #fff;
+    border: none;
+}
+.faq_search_form .search_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    border: none;
+    background: #1218ff;
+    color: #fff;
+    padding: 0 20px;
+}
+/*======= Faq search bar css End ==========*/
 /*======= Faq Page css start ==========*/
 .fq_section_wrap{
     display: inline-block;
@@ -2264,11 +2304,14 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     width: 100%;
     margin-bottom: 30px;
 }
+.fq_section .faq_heading {
+    margin-bottom: 6px;
+}
 .fq_section .faq_heading h6 {
     font-size: 16px;
     font-weight: 600;
     margin-top: 0;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 .fq_section .faq_content p {
     margin-bottom: 0;
