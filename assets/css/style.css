@@ -767,6 +767,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     text-decoration: none;
     color: #ffffff;
     font-size: 15px;
+    white-space: nowrap;
 }
 .dropdown_menu li a:hover {
     background: #111;
@@ -1372,6 +1373,9 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     float: left;
     width: 100%;
     margin-bottom: 30px;
+}
+.tran_widgets:last-child {
+    margin-bottom: 0;
 }
 .tran_widgets .titles {
     font-size: 16px;
@@ -2463,3 +2467,27 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     line-height: 26px;
 }
 /*======= Privacy page content css End ==========*/
+/*======= Vendor Register css End ==========*/
+.vendor_reg_modal {
+    max-width: 625px;
+}
+.vendor_reg_modal .select_box .bootstrap-select > .dropdown-toggle {
+    background-color: #fff;
+    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+}
+.vendor_reg_modal .select_box .bootstrap-select > .dropdown-toggle:hover {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+}
+.vendor_reg_modal .select_box .bootstrap-select > .dropdown-toggle:focus{
+    background-color: #ffffff !important;
+    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);  
+}
+/*======= Vendor Register css End ==========*/
