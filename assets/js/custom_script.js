@@ -182,7 +182,7 @@
 		//slider full height
 		$(".slide_item_bg").css('height',slide_h);
 		//Sidebar full height
-		$(".transl_sidebar").css('height',win_h);
+		$(".transl_sidebar").css('max-height',win_h);
 	   }
 	});
 	//Jqeury counter

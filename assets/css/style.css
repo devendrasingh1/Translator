@@ -376,7 +376,7 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     opacity: 0;
 }
 .radio_box .r_text {
-    padding-left: 28px;
+    padding-left: 25px;
     color: #34404b;
     display: block;
 }
@@ -1368,11 +1368,17 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     width: 100%;
     background: #f7f7f7;
     padding: 20px;
+    overflow-y: auto;
 }
 .tran_widgets{
     float: left;
     width: 100%;
     margin-bottom: 30px;
+}
+.tran_widgets .p_filter_btn {
+    margin-top: 15px;
+    height: 40px;
+    line-height: 38px;
 }
 .tran_widgets:last-child {
     margin-bottom: 0;
@@ -1607,8 +1613,34 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     float: left;
     width: 300px;
 }
-.trans_thumb_lft .trans_thumb{
+.trans_thumb_lft .trans_thumb {
     display: inline-block;
+    position: relative;
+}
+.img_upload_icon input{
+    display: none;
+}
+.img_upload_icon{
+    display: inline-block;
+    margin-bottom: 0;
+    background: #1218ff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.trans_thumb .img_upload_icon {
+    position: absolute;
+    right: 8px;
+    bottom: 7px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 19px;
 }
 .trans_detail_figure .trans_caption_rgt {
     display: block;
@@ -2470,6 +2502,28 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 /*======= Vendor Register css End ==========*/
 .vendor_reg_modal {
     max-width: 625px;
+}
+.login_form  .gender_radio {
+    width: 100%;
+    background: #fff;
+    height: 45px;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    padding-left: 9px;
+}
+.login_form .form_group .gender_radio label {
+    width: auto;
+    margin-bottom: 0;
+}
+.gender_radio label:first-child {
+    margin-right: 17px;
 }
 .vendor_reg_modal .select_box .bootstrap-select > .dropdown-toggle {
     background-color: #fff;

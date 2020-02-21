@@ -122,7 +122,11 @@
 						<div class="trans_detail_figure">
 							<div class="trans_thumb_lft">
 								<div class="trans_thumb">
-									<img src="assets/images/translator/img_3.jpg" alt="" class="img-fluid">
+									<img src="assets/images/translator/img_3.jpg" alt="" class="img-fluid" id="profile_img">
+									<label class="img_upload_icon">
+										<input type="file" name="upload" onchange="document.getElementById('profile_img').src = window.URL.createObjectURL(this.files[0])">
+										<i class="far fa-image"></i>
+									</label>
 								</div>
 							</div>
 							<div class="trans_caption_rgt">
