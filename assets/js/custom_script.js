@@ -67,6 +67,7 @@
 	if($(".calendar_input").length > 0){
 		$( ".calendar_input" ).datepicker({
 		  dateFormat: "dd-mm-yy",
+		  minDate:0,
 		});
 	}
 	//Timepicker

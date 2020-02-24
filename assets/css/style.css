@@ -1660,10 +1660,11 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .heading_dv .right_dv {
     float: right;
 }
-.trans_caption_rgt .hire_btn {
+.trans_caption_rgt .site_button {
     height: 40px;
     line-height: 38px;
     font-size: 14px;
+    padding: 0 20px;
 }
 .rating_wraps .rating_dv {
     width: auto;
@@ -2137,7 +2138,8 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 .login_form .form_group select, 
 .login_form .form_group textarea {
     width: 100%;
-    height: 45px;
+    height: 41px;
+    font-size: 14px;
     border: none;
     background: #ffffff;
     border-radius: 0;
@@ -2180,6 +2182,33 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     color: #fff;
     border-radius: 4px;
     padding: 0 30px;
+}
+.login_form .form_title {
+    color: #1218ff;
+    font-size: 18px;
+    margin-bottom: 9px;
+}
+.login_form .gender_radio {
+    width: 100%;
+    background: #fff;
+    height: 41px;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
+    padding-left: 9px;
+}
+.login_form .form_group .gender_radio label {
+    width: auto;
+    margin-bottom: 0;
+}
+.gender_radio label:first-child {
+    margin-right: 17px;
 }
 /*======= login sinup css ==========*/
 /*======= selectpicker css ==========*/
@@ -2354,6 +2383,43 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
     color: #777;
 }
 /*======= Faq Page css End ==========*/
+/*======= profile modal css start ==========*/
+.modal-header {
+    padding: 10px;
+}
+.modal-header .modal-title {
+    font-size: 18px;
+}
+.modal-header .close {
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+#edit_profile_modal .modal-body {
+    max-height: 500px;
+    overflow-y: auto;
+}
+.profile_form .button_group {
+    text-align: left;
+}
+.profile_form .form_group .update_button {
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    height: 41px;
+    line-height: 41px;
+    padding: 0 25px;
+    text-transform: capitalize;
+    border: none;
+    background: #1218ff;
+    color: #fff;
+    margin-top: 12px;
+}
+.profile_form .form_group .update_button:hover {
+    background: #000000;
+    color: #fff;
+}
+/*======= profile modal css End ==========*/
 /*======= animation css ==========*/
 .fadetop{
     -webkit-animation:fadetop 1s 1;
@@ -2502,28 +2568,6 @@ input:focus, select:focus, a:focus, button:focus, textarea:focus{
 /*======= Vendor Register css End ==========*/
 .vendor_reg_modal {
     max-width: 625px;
-}
-.login_form  .gender_radio {
-    width: 100%;
-    background: #fff;
-    height: 45px;
-    display: -ms-flexbox;
-    display: flex;
-    display: -webkit-flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: center;
-    box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
-    -webkit-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
-    -moz-box-shadow: 3px 4px 15px -6px rgba(0, 0, 0, 0.45);
-    padding-left: 9px;
-}
-.login_form .form_group .gender_radio label {
-    width: auto;
-    margin-bottom: 0;
-}
-.gender_radio label:first-child {
-    margin-right: 17px;
 }
 .vendor_reg_modal .select_box .bootstrap-select > .dropdown-toggle {
     background-color: #fff;

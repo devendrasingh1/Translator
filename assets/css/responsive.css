@@ -221,6 +221,16 @@
 	.contact_section_right {
 	    margin-top: 30px;
 	}
+	/*======= translator Details css =======*/
+	.heading_dv .lft {
+	    width: 100%;
+	}
+	.heading_dv .right_dv {
+	    float: left;
+	    width: 100%;
+	    margin-top: 20px;
+	}
+	/*======= translator Details css =======*/
 }
 @media(max-width: 767px) {
 	.owl-carousel .owl-nav button {
@@ -289,15 +299,6 @@
 	}
 	.heading_dv {
 	    text-align: center;
-	}
-	.heading_dv .lft {
-	    display: inline-block;
-	    width: 100%;
-	}
-	.heading_dv .right_dv {
-	    float: left;
-	    width: 100%;
-	    margin-top: 22px;
 	}
 	.trans_caption_rgt .amount_trns{
 		text-align: center;

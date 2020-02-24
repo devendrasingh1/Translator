@@ -145,6 +145,7 @@
 										</div>
 									</div>
 									<div class="right_dv">
+										<a href="#" class="edit_trans site_button" data-toggle="modal" data-target="#edit_profile_modal">Edit Profile</a> 
 										<a href="#" class="hire_btn site_button">Hire now</a>
 									</div>
 								</div>
@@ -173,7 +174,7 @@
 										   <div class="social_icons">
 											  <a href="#"><i class="fab fa-facebook-f"></i></a>
 											  <a href="#"><i class="fab fa-twitter"></i></a>
-											  <a href="#"><i class="fab fa-google-plus-g"></i></a>
+											  <a href="#"><i class="fab fa-linkedin-in"></i></a>
 											  <a href="#"><i class="fab fa-instagram"></i></a>
 									 		</div>
 									 	</td>
@@ -181,6 +182,10 @@
 								  </table>
 								</div>
 								<div class="profile_dtl_tabs">
+									<div>
+										<a href="#" class="site_button edit_dtl_btn" data-toggle="modal" data-target="#edit_detail_modal">
+											<i class="fas fa-pencil-alt"></i> Edit Details</a>
+									</div>
 									<ul class="tab_menu">
 										<li class="tab_link active" data-tab="personal_tab">
 											personal details
@@ -363,6 +368,166 @@
 		</div>
 	</div>
 	<!-- footer Section End -->
+	<!-- Edit profile modal start -->
+	<div class="modal fade" id="edit_profile_modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Edit Your Profile Details</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="login_form profile_form">
+	      		<form>
+  					<div class="form_group">
+						<label>Name</label>
+						<div class="input_group">
+							<input type="text" name="" placeholder="Enter Your Name">
+						</div>
+					</div>
+					<!-- row start -->
+	      			<div class="row">
+	      				<div class="col-lg-6">
+							<div class="form_group">
+								<label>Gender</label>
+								<div class="input_group">
+									<div class="gender_radio radio_box">
+										<label>
+											<input type="radio" name="gender" value="Male">
+											<span class="r_check"></span>
+											<span class="r_text">Male</span>
+										</label>
+										<label>
+											<input type="radio" name="gender" value="Female">
+											<span class="r_check"></span>
+											<span class="r_text">Female</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+	      				<div class="col-lg-6">
+	      					<div class="form_group">
+								<label>Email</label>
+								<div class="input_group">
+									<input type="email" name="" placeholder="Enter Your Email">
+								</div>
+							</div>
+	      				</div>
+	      				<div class="col-lg-6">
+		      				<div class="form_group">
+								<label>Phone</label>
+								<div class="input_group">
+									<input type="text" name="" placeholder="Enter Your Mobile Number">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form_group">
+								<label>Fees</label>
+								<div class="input_group">
+									<input type="text" name="" placeholder="Fees Per Hour">
+								</div>
+							</div>
+						</div>
+	      			</div>
+	      			<!-- row End -->
+	      			<h5 class="form_title">Social Links</h5>
+	      			<!-- row start -->
+	      			<div class="row">
+	      				<div class="col-lg-6">
+							<div class="form_group">
+								<label>Facebook</label>
+								<div class="input_group">
+									<input type="text" name="fb" placeholder="facebook url">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form_group">
+								<label>Twiiter</label>
+								<div class="input_group">
+									<input type="text" name="fb" placeholder="Twiiter url">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form_group">
+								<label>Linkedin</label>
+								<div class="input_group">
+									<input type="text" name="fb" placeholder="Linkedin url">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="form_group">
+								<label>Instagram</label>
+								<div class="input_group">
+									<input type="text" name="fb" placeholder="Instagram url">
+								</div>
+							</div>
+						</div>
+	      			</div>
+	      			<!-- row End -->
+	      			<div class="form_group">
+						<label>Address</label>
+						<div class="input_group">
+							<textarea name="address" placeholder="Enter Your Address"></textarea>
+						</div>
+					</div>
+	      			<div class="form_group button_group">
+	      				<button type="submit" name="submit" class="update_button">update</button>
+					</div>
+	      		</form>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Edit profile modal End -->
+	<!-- Edit Details modal start -->
+	<div class="modal fade" id="edit_detail_modal" tabindex="-1" role="dialog">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title">Edit Your Other Details</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="login_form other_detail_form">
+	      		<form>
+	      			<div class="form_group">
+						<label>Personal Details</label>
+						<div class="input_group">
+							<textarea name="address" placeholder="Enter Personal Details"></textarea>
+						</div>
+					</div>
+					<div class="form_group">
+						<label>Business Details</label>
+						<div class="input_group">
+							<textarea name="address" placeholder="Enter Business Details"></textarea>
+						</div>
+					</div>
+					<div class="form_group">
+						<label>Other Details</label>
+						<div class="input_group">
+							<textarea name="address" placeholder="Enter Business Details"></textarea>
+						</div>
+					</div>
+	      			<div class="form_group button_group">
+	      				<button type="submit" name="submit" class="site_button">update</button>
+					</div>
+	      		</form>
+	      	</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Edit Details modal End -->
 	<!-- jquery library js -->
 	<script src="assets/js/jquery.min.js"></script>
 	<!-- jquery library js -->
